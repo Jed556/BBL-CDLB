@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button[type="submit"],
+button[type="button"] {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #005fa3;
+}
+
+button[type="button"] {
+    margin-left: 10px;
+    cursor: default;
+}
+
+button[type="button"].disabled {
+    background-color: #d3d3d3;
+    cursor: default;
+}
+
+button[type="button"].enabled {
+    background-color: #00cc00;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    margin-left: 10px;
+}
+
+.result {
+    display: none;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.result.show {
+    display: block;
+}
+
+pre {
+    font-size: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
