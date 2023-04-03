@@ -51,8 +51,21 @@ button[type="button"].disabled {
 }
 
 button[type="button"].enabled {
+    background-color: #0077cc;
+    cursor: pointer;
+}
+
+button[type="button"].enabled:hover {
+    background-color: #005fa3;
+}
+
+button[type="button"].enabled#download-btn {
     background-color: #00cc00;
     cursor: pointer;
+}
+
+button[type="button"].enabled#download-btn:hover {
+    background-color: #00c000;
 }
 
 button[type="submit"] {

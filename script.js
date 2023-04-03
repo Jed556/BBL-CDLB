@@ -4,7 +4,8 @@ const extractBtn = document.querySelector('#extract-btn');
 const openBtn = document.querySelector('#open-btn');
 const downloadBtn = document.querySelector('#download-btn');
 const result = document.querySelector('#result');
-let url, originalUrl = '';
+let url = '';
+let originalUrl = '';
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -14,7 +15,6 @@ form.addEventListener('submit', function (event) {
     originalUrl = extractOriginalUrl(url);
 
     if (originalUrl !== '') {
-        submitBtn.style.backgroundColor = "#0077cc";
         extractBtn.classList.remove('disabled');
         extractBtn.classList.add('enabled');
         openBtn.classList.remove('disabled');
