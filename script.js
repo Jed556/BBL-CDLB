@@ -27,20 +27,22 @@ form.addEventListener('submit', function (event) {
 });
 
 extractBtn.addEventListener('click', function () {
-    result.innerHTML = `
+    if (originalUrl !== '') {
+        result.innerHTML = `
       <h2>Result</h2>
       <pre>${originalUrl}</pre>
     `;
 
-    result.style.display = 'block';
+        result.style.display = 'block';
+    }
 });
 
 openBtn.addEventListener('click', function () {
-    window.open(url, '_blank');
+    if (url !== '') { window.open(url, '_blank'); }
 });
 
 downloadBtn.addEventListener('click', function () {
-    window.location.href = originalUrl;
+    if (originalUrl !== '') { window.location.href = originalUrl; }
 });
 
 
