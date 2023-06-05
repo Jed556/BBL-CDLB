@@ -7,11 +7,11 @@ const result = document.querySelector('#result');
 let url = '';
 let originalUrl = '';
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     const urlInput = document.querySelector('#url');
-    url = urlInput.value;
+    url = removePrefix(urlInput.value);
     originalUrl = extractOriginalUrl(url);
 
     if (originalUrl !== '') {
@@ -26,7 +26,7 @@ form.addEventListener('submit', function (event) {
     return false;
 });
 
-extractBtn.addEventListener('click', function () {
+extractBtn.addEventListener('click', function() {
     if (originalUrl !== '') {
         result.innerHTML = `
       <h2>Result</h2>
@@ -37,11 +37,11 @@ extractBtn.addEventListener('click', function () {
     }
 });
 
-openBtn.addEventListener('click', function () {
+openBtn.addEventListener('click', function() {
     if (url !== '') { window.open(url, '_blank'); }
 });
 
-downloadBtn.addEventListener('click', function () {
+downloadBtn.addEventListener('click', function() {
     if (originalUrl !== '') { window.location.href = originalUrl; }
 });
 
@@ -55,4 +55,11 @@ function extractOriginalUrl(url) {
     }
 
     return decodeURIComponent(url.slice(start, end));
+}
+
+function removePrefix(url) {
+    if (url.startsWith('view-source:')) {
+        return url.replace('view-source:', '');
+    }
+    return url;
 }
