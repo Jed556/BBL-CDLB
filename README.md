@@ -4,4 +4,4 @@
 3. Paste the URL in the input box and click on the submit button.
 
 ### Demo Video
-Uploading Demo.mp4…
+https://github.com/Jed556/BBL-CDLB/assets/84989546/ecfb714a-fb4a-45d6-90d1-456ff267bb6a
