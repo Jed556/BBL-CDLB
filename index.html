@@ -9,17 +9,18 @@
 
 <body>
     <div class="container">
-        <h1>BBL Content Download Lock Bypass</h1>
+        <h1><a href="https://github.com/Jed556/BBL-CDLB">BBL Content Download Lock Bypass</a></h1>
         <form id="form">
             <label for="url">Enter encoded URL:</label>
-            <input type="text" id="url" name="url" required>
+            <input type="text" id="url" name="url"
+                requiredplaceholder="Enter URL (e.g., https://basic-doc-viewer.sgc.api.blackboard.com/api/v1/...)"
+                class="fancy-input small-placeholder">
             <button type="submit" id="submit-btn">Submit</button>
             <button type="button" id="extract-btn" class="disabled">Extract</button>
             <button type="button" id="open-btn" class="disabled">Open</button>
             <button type="button" id="download-btn" class="disabled">Download</button>
         </form>
-        <div class="result" id="result" style="display: none;">
-        </div>
+        <div class="result scroll-container" id="result" style="display: none;"> </div>
     </div>
 
     <script src="script.js"></script>
