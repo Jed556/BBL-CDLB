@@ -3,4 +3,5 @@
 2. Copy the URL of the newly opened tab
 3. Paste the URL in the input box and click on the submit button.
 
-![](doc/Demo.mp4)
+### Demo Video
+Uploading Demo.mp4…
